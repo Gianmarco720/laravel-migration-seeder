@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('company', 150);
             $table->string('departure_station', 200);
             $table->string('arrival_station', 200);
-            $table->time('departure_time', $precision = 2);
-            $table->time('arrival_time', $precision = 2);
+            $table->string('departure_time', 50);
+            $table->string('arrival_time', 50);
             $table->string('train_no');
             $table->integer('carriage_no')->nullable();
             $table->boolean('in_time')->nullable();
